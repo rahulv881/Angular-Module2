@@ -37,9 +37,8 @@
           <li ng-repeat="item in toBuy.items">
             Buy {{ item.quantity }} {{ item.name }}
             <button ng-click="toBuy.buy($index)" class="btn btn-default">
-              <span ng-if="item.name!=='Final Fantasy XV'" class="glyphicon glyphicon-ok"></span>
-              <img src="images/logo-final-fantasy.png" style="width:120px" ng-if="item.name==='Final Fantasy XV'"> Bought
-            </button>
+                Button
+	    </button>
           </li>
         </ul>
         <div ng-if="toBuy.items.length == 0" class="emptyMessage">Everything is bought!</div>
